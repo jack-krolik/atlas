@@ -12,7 +12,7 @@ This repository contains the optimized model definition and the distributed trai
 |------|---------|
 | `sleepdetector_optimized.py` | Model definition: `FlexibleSleepStageClassifier` and components, plus the `create_flexible_model` / `create_model` factory functions. |
 | `training_optimized.py` | DDP + AMP training pipeline with focal loss, OneCycleLR, resumable checkpointing, and per-fold cross-validation. |
-| `create_training_data.py` | *(referenced dependency, not included here)* Builds the 5-fold pickle and defines `SimpleSequentialDataset`. The training script imports it so pickle can resolve dataset classes. |
+| `create_training_data.py` | Builds the 5-fold pickle and defines `SimpleSequentialDataset`. The training script imports it so pickle can resolve dataset classes. |
 
 ## Model
 
